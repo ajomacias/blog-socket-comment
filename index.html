@@ -1,0 +1,56 @@
+<style>
+
+    .load-container{
+        margin : 0;
+        display: flex;
+        gap : 3px; 
+        text-align: center;
+    }
+
+    .item-load{
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: rgb(100, 100, 100);
+    }
+
+    .load-1{
+        animation:1s infinite 300ms load-item;
+
+    }
+
+    .load-2{
+        animation:1s infinite 600ms load-item;
+
+    }
+
+    .load-3{
+        animation: 1s infinite 900ms load-item; 
+    } 
+
+    @keyframes load-item { 
+
+        33%{
+            margin-top: 2px;
+        
+        }
+        66%{
+            margin: 0; 
+
+        }
+        100%{
+            margin-bottom : 2px; 
+
+        }
+        
+    }
+
+</style>
+
+<div class="load-container">
+  <div class="item-load load-1 "></div>
+  <div class="item-load load-2 " ></div>
+  <div class="item-load load-3 " ></div>
+</div>
+
+<script></script>
