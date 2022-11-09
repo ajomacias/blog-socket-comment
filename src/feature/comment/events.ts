@@ -13,8 +13,10 @@ comments_space.on('connection',
 
     socket.on('write', functions.onWrite);
 
+    socket.on('no-write', functions.onNoWrite);
+
 });
 
 comments_space.on('disconnect', ()=>{
-  console.log('disconnect')
-})
+  console.log('disconnect');
+});
